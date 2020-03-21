@@ -10,9 +10,9 @@ gem 'rake', '>= 11.1'
 gem 'mocha', '~> 0.14', require: false
 
 gem 'rack-cache', '~> 1.2'
-gem 'jquery-rails'
-gem 'coffee-rails'
-gem 'sass-rails'
+gem 'jquery-rails', '>= 4.1.1'
+gem 'coffee-rails', '>= 4.2.2'
+gem 'sass-rails', '>= 5.0.5'
 gem 'turbolinks', '~> 5'
 
 # require: false so bcrypt is loaded only when has_secure_password is used.
@@ -28,9 +28,9 @@ gem 'uglifier', '>= 1.3.0', require: false
 gem 'sass', github: 'sass/sass', branch: 'stable', require: false
 
 group :doc do
-  gem 'sdoc', '~> 0.4.0'
+  gem 'sdoc', '~> 1.0.0'
   gem 'redcarpet', '~> 3.2.3', platforms: :ruby
-  gem 'w3c_validators'
+  gem 'w3c_validators', '>= 1.2'
   gem 'kindlerb', '0.1.1'
 end
 
