@@ -67,9 +67,9 @@ group :cable do
   gem 'faye-websocket', require: false
 
   # Lock to 1.1.1 until the fix for https://github.com/faye/faye/issues/394 is released
-  gem 'faye', '1.1.1', require: false
+  gem 'faye', '1.1.3', require: false
 
-  gem 'blade', require: false
+  gem 'blade', '>= 0.5.6', require: false
   gem 'blade-sauce_labs_plugin', require: false
 end
 
