@@ -9,10 +9,10 @@ gem 'rake', '>= 11.1'
 # be loaded after loading the test library.
 gem 'mocha', '~> 0.14', require: false
 
-gem 'rack-cache', '~> 1.2'
-gem 'jquery-rails'
-gem 'coffee-rails'
-gem 'sass-rails'
+gem 'rack-cache', '~> 1.6', '>= 1.6.1'
+gem 'jquery-rails', '>= 4.4.0'
+gem 'coffee-rails', '>= 4.2.1'
+gem 'sass-rails', '>= 5.0.5'
 gem 'turbolinks', '~> 5'
 
 # require: false so bcrypt is loaded only when has_secure_password is used.
@@ -41,7 +41,7 @@ gem 'listen', '~> 3.0.5', require: false
 # Active Job.
 group :job do
   gem 'resque', github: 'resque/resque', require: false
-  gem 'resque-scheduler', require: false
+  gem 'resque-scheduler', '>= 4.2.0', require: false
   gem 'sidekiq', require: false
   gem 'sucker_punch', require: false
   gem 'delayed_job', require: false, github: 'collectiveidea/delayed_job'
@@ -69,7 +69,7 @@ group :cable do
   # Lock to 1.1.1 until the fix for https://github.com/faye/faye/issues/394 is released
   gem 'faye', '1.1.1', require: false
 
-  gem 'blade', require: false
+  gem 'blade', '>= 0.5.6', require: false
   gem 'blade-sauce_labs_plugin', require: false
 end
 
