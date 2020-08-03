@@ -64,12 +64,12 @@ group :cable do
   gem 'hiredis', require: false
   gem 'redis', require: false
 
-  gem 'faye-websocket', require: false
+  gem 'faye-websocket', '>= 0.11.0', require: false
 
   # Lock to 1.1.1 until the fix for https://github.com/faye/faye/issues/394 is released
   gem 'faye', '1.1.1', require: false
 
-  gem 'blade', require: false
+  gem 'blade', '>= 0.5.6', require: false
   gem 'blade-sauce_labs_plugin', require: false
 end
 
