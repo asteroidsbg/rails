@@ -29,7 +29,7 @@ gem 'sass', github: 'sass/sass', branch: 'stable', require: false
 
 group :doc do
   gem 'sdoc', '~> 0.4.0'
-  gem 'redcarpet', '~> 3.2.3', platforms: :ruby
+  gem 'redcarpet', '~> 3.5.1', platforms: :ruby
   gem 'w3c_validators'
   gem 'kindlerb', '0.1.1'
 end
