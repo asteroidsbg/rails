@@ -10,9 +10,9 @@ gem 'rake', '>= 11.1'
 gem 'mocha', '~> 0.14', require: false
 
 gem 'rack-cache', '~> 1.2'
-gem 'jquery-rails'
-gem 'coffee-rails'
-gem 'sass-rails'
+gem 'jquery-rails', '>= 4.1.1'
+gem 'coffee-rails', '>= 4.2.2'
+gem 'sass-rails', '>= 5.0.5'
 gem 'turbolinks', '~> 5'
 
 # require: false so bcrypt is loaded only when has_secure_password is used.
@@ -58,7 +58,7 @@ end
 
 # Action Cable
 group :cable do
-  gem 'puma', require: false
+  gem 'puma', '>= 4.3.11', require: false
 
   gem 'em-hiredis', require: false
   gem 'hiredis', require: false
