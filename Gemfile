@@ -11,7 +11,7 @@ gem 'mocha', '~> 0.14', require: false
 
 gem 'rack-cache', '~> 1.2'
 gem 'jquery-rails'
-gem 'coffee-rails'
+gem 'coffee-rails', '>= 4.2.2'
 gem 'sass-rails'
 gem 'turbolinks', '~> 5'
 
