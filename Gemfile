@@ -9,10 +9,10 @@ gem 'rake', '>= 11.1'
 # be loaded after loading the test library.
 gem 'mocha', '~> 0.14', require: false
 
-gem 'rack-cache', '~> 1.2'
+gem 'rack-cache', '~> 1.6', '>= 1.6.1'
 gem 'jquery-rails'
-gem 'coffee-rails'
-gem 'sass-rails'
+gem 'coffee-rails', '>= 4.2.2'
+gem 'sass-rails', '>= 5.0.8'
 gem 'turbolinks', '~> 5'
 
 # require: false so bcrypt is loaded only when has_secure_password is used.
