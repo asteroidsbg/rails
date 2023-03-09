@@ -9,7 +9,7 @@ gem 'rake', '>= 11.1'
 # be loaded after loading the test library.
 gem 'mocha', '~> 0.14', require: false
 
-gem 'rack-cache', '~> 1.2'
+gem 'rack-cache', '~> 1.6', '>= 1.6.1'
 gem 'jquery-rails'
 gem 'coffee-rails'
 gem 'sass-rails'
@@ -90,7 +90,7 @@ group :test do
 end
 
 platforms :ruby, :mswin, :mswin64, :mingw, :x64_mingw do
-  gem 'nokogiri', '>= 1.6.8'
+  gem 'nokogiri', '>= 1.10.5'
 
   # Needed for compiling the ActionDispatch::Journey parser.
   gem 'racc', '>=1.4.6', require: false
