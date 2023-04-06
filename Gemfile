@@ -9,7 +9,7 @@ gem 'rake', '>= 11.1'
 # be loaded after loading the test library.
 gem 'mocha', '~> 0.14', require: false
 
-gem 'rack-cache', '~> 1.2'
+gem 'rack-cache', '~> 1.6', '>= 1.6.1'
 gem 'jquery-rails'
 gem 'coffee-rails'
 gem 'sass-rails'
@@ -42,7 +42,7 @@ gem 'listen', '~> 3.0.5', require: false
 group :job do
   gem 'resque', github: 'resque/resque', require: false
   gem 'resque-scheduler', require: false
-  gem 'sidekiq', require: false
+  gem 'sidekiq', '>= 7.0.8', require: false
   gem 'sucker_punch', require: false
   gem 'delayed_job', require: false, github: 'collectiveidea/delayed_job'
   gem 'queue_classic', github: "QueueClassic/queue_classic", branch: 'master', require: false, platforms: :ruby
@@ -90,7 +90,7 @@ group :test do
 end
 
 platforms :ruby, :mswin, :mswin64, :mingw, :x64_mingw do
-  gem 'nokogiri', '>= 1.6.8'
+  gem 'nokogiri', '>= 1.12.5'
 
   # Needed for compiling the ActionDispatch::Journey parser.
   gem 'racc', '>=1.4.6', require: false
