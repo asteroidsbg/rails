@@ -42,7 +42,7 @@ gem 'listen', '~> 3.0.5', require: false
 group :job do
   gem 'resque', github: 'resque/resque', require: false
   gem 'resque-scheduler', require: false
-  gem 'sidekiq', require: false
+  gem 'sidekiq', '>= 7.1.3', require: false
   gem 'sucker_punch', require: false
   gem 'delayed_job', require: false, github: 'collectiveidea/delayed_job'
   gem 'queue_classic', github: "QueueClassic/queue_classic", branch: 'master', require: false, platforms: :ruby
