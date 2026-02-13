@@ -70,7 +70,7 @@ group :cable do
   gem 'faye', '1.1.1', require: false
 
   gem 'blade', require: false
-  gem 'blade-sauce_labs_plugin', require: false
+  gem 'blade-sauce_labs_plugin', '>= 0.5.3', require: false
 end
 
 # Add your own local bundler stuff.
